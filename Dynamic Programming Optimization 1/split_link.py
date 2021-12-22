@@ -7,4 +7,4 @@ def split_link(prices):
         option_2 = sum(prices[current_index:current_index+2]) + data[current_index + 3]
         data[current_index] = max(option_1, option_2)
         current_index -= 1
-    return data[0]
+    return max(data[0:3])
